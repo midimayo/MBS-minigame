@@ -17,7 +17,8 @@ public class CollisionTriggersText : MonoBehaviour
     void Start()
     {
         DialogueBox = DialogueBox.GetComponentInChildren<Canvas>();
-        DialogueBox.gameObject.SetActive(false);
+        //to hide the box before u hit it, its set to true right now
+        //DialogueBox.gameObject.SetActive(true);
     }
   
     private void OnCollisionEnter2D(Collision2D collision)
